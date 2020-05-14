@@ -7,4 +7,9 @@ $hero: #ffe7d2;
 $main-btn: #30488f;
 $secondary: #58402c;
 
-// Typography
+// Mixin
+@mixin flexCenter($jc: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}

@@ -32,8 +32,8 @@ a {
 
 .main-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 75px;
   font-size: 14px;
   border-bottom: 1px solid #58402c;
@@ -178,10 +178,10 @@ a {
 
 .traditional {
   background-color: #ffe7d2;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   padding: 50px 0;
 }
 
@@ -193,27 +193,31 @@ a {
 }
 
 .traditional .row {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 30px;
 }
 
 .traditional .row .box {
   width: 20%;
   margin: 20px;
-  display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .traditional .row .box img {
   width: 140px;
   height: 105px;
   margin-bottom: 20px;
+}
+
+.traditional .row .box .safe {
+  width: 50px;
 }
 
 .traditional .row .figs {

@@ -1,7 +1,5 @@
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter(space-between);
     height: 75px;
     font-size: 14px;
 
