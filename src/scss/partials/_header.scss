@@ -10,6 +10,13 @@
         height: 35px;
     }
 
+    .logo {
+        background-image: url("../../../dist/img/logo.svg");
+        width: 110px;
+        height: 35px;
+        background-repeat: no-repeat;
+    }
+
     &--right {
         &__link {
             list-style: none;
@@ -19,6 +26,46 @@
                 margin: 0 10px;
                 padding: 0 10px;
             }
+        }
+
+        .with-dropdown {
+            position: relative;
+        }
+
+        .with-dropdown::after {
+            content: "\f078";
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        .dropdown {
+            display: none;
+            list-style: none;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            margin: 15px 0;
+            background-color: #fff;
+            transition: all linear 0.15s;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e1ddd4;
+            border-radius: 7px;
+            width: 100px;
+
+            li {
+                padding: 10px;
+            }
+        }
+
+        .with-dropdown:hover .dropdown,
+        .with-dropdown:focus-within .dropdown,
+        .dropdown:focus-within {
+            display: block;
+        }
+
+        .hamburger {
+            display: none;
         }
     }
 
