@@ -17,34 +17,75 @@
         background-repeat: no-repeat;
     }
 
-    &--right {
-        &__link {
-            list-style: none;
+    .hamburger {
+        position: relative;
+    }
 
-            .link-item {
-                display: inline-block;
-                margin: 0 10px;
-                padding: 0 10px;
+    .dropdown {
+        list-style: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &--right {
+            &__link {
+                position: relative;
+                list-style: none;
+
+                .link-item {
+                    display: inline-block;
+                    margin: 0 10px;
+                    padding: 0 10px;
+                }
+            }
+
+            .with-dropdown {
+                position: relative;
+
+                &::after {
+                    content: "\f078";
+                    display: inline-block;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                }
+            }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0;
+                margin: 15px 0;
+                background-color: #fff;
+                transition: all linear 0.15s;
+                box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+                border: 1px solid #e1ddd4;
+                border-radius: 7px;
+                width: 100px;
+
+                li {
+                    padding: 10px;
+                }
+            }
+
+            .with-dropdown:hover .dropdown,
+            .with-dropdown:focus-within .dropdown,
+            .dropdown:focus-within {
+                display: block;
+            }
+
+            .fa-bars {
+                display: none;
             }
         }
+    }
 
-        .with-dropdown {
-            position: relative;
-        }
-
-        .with-dropdown::after {
-            content: "\f078";
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-        }
-
-        .dropdown {
-            display: none;
-            list-style: none;
+    @media screen and (max-width: 1199px) {
+        .main-header--right__link {
             position: absolute;
-            top: 0px;
-            left: 0;
+            top: 0;
+            right: 0;
+            list-style: none;
+            display: none;
             margin: 15px 0;
             background-color: #fff;
             transition: all linear 0.15s;
@@ -53,19 +94,30 @@
             border-radius: 7px;
             width: 100px;
 
-            li {
+            .link-item:nth-child(2) {
+                padding-top: 0;
+            }
+
+            .link-item {
                 padding: 10px;
             }
         }
 
-        .with-dropdown:hover .dropdown,
-        .with-dropdown:focus-within .dropdown,
-        .dropdown:focus-within {
-            display: block;
+        .dropdown li {
+            padding-bottom: 10px;
         }
 
-        .hamburger {
+        .hamburger-hide {
             display: none;
+        }
+
+        .fa-bars {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .hamburger:hover .main-header--right__link {
+            display: block;
         }
     }
 
