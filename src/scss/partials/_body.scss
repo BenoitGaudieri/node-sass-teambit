@@ -101,7 +101,7 @@
             align-self: start;
 
             a {
-                color: #30488f;
+                color: $link;
                 display: block;
                 margin: 30px 0;
             }
@@ -117,6 +117,62 @@
 
         &.end {
             @include flexCenter(flex-end);
+        }
+    }
+}
+
+// Fourth section
+.cta {
+    @include flexCenter;
+    flex-direction: column;
+    background-color: $hero;
+
+    .title {
+        display: inline-block;
+    }
+
+    .emoticon {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+    }
+
+    .box {
+        max-width: 628px;
+        margin: 35px auto;
+        padding: 20px 20px 20px 40px;
+        border: 1px solid #bdb5af;
+        border-radius: 7px;
+        background: #fff;
+        box-sizing: border-box;
+        font-size: 0.875rem;
+        line-height: 1.5;
+
+        p {
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        a {
+            color: $link;
+        }
+
+        .founders {
+            @include flexCenter(flex-start);
+
+            span {
+                display: block;
+            }
+        }
+
+        .pic {
+            margin: 10px;
+
+            img {
+                width: 38px;
+                height: 38px;
+            }
         }
     }
 }
