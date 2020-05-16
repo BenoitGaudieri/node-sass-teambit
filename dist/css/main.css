@@ -345,4 +345,57 @@ a {
   height: 38px;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.footer .col {
+  margin-right: 30px;
+}
+
+.footer .col:first-child {
+  max-width: 30%;
+}
+
+.footer .col:last-child {
+  margin-right: 0;
+}
+
+.footer .col img {
+  width: 50px;
+  height: 50px;
+  margin: 0 30px;
+}
+
+.footer .col .logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer .col .logo-box a {
+  color: #30488f;
+}
+
+.footer .col ul {
+  list-style: none;
+}
+
+.footer .col li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer .col li:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 
