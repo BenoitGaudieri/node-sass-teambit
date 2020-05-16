@@ -30,6 +30,12 @@ a {
   margin: 0 auto;
 }
 
+.title {
+  line-height: 1.5;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 .main-header {
   display: flex;
   align-items: center;
@@ -37,6 +43,10 @@ a {
   height: 75px;
   font-size: 14px;
   border-bottom: 1px solid #58402c;
+}
+
+.main-header a {
+  color: #58402c;
 }
 
 .main-header--left img {
@@ -186,9 +196,6 @@ a {
 }
 
 .traditional .title {
-  line-height: 1.5;
-  font-size: 26px;
-  font-weight: 600;
   text-align: center;
 }
 
@@ -231,6 +238,52 @@ a {
 
 .traditional .row .closing img {
   width: 100%;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.how-it-works .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 30px 150px;
+}
+
+.how-it-works .row img {
+  max-width: 768px;
+}
+
+.how-it-works .row .info {
+  margin: 0 30px;
+  max-width: 460px;
+  font-size: 22px;
+  line-height: 33px;
+  align-self: start;
+}
+
+.how-it-works .row .info a {
+  color: #30488f;
+  display: block;
+  margin: 30px 0;
+}
+
+.how-it-works .row .info figure {
+  text-align: center;
+}
+
+.how-it-works .row .info figure img {
+  max-width: 270px;
+}
+
+.how-it-works .row.end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 
